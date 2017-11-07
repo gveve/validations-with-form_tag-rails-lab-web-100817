@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+resources :posts
+resources :authors
+
+end
+
+# get "/authors/new", to: "authors#new", as: "new_author"
+# get "/authors/:id", to: "authors#show", as: "author"
+# get "/authors/:id/edit", to: "authors#edit", as:"edit_author"
+# post "/authors", to: "authors#create"
+# patch "/authors/:id", to: "posts#update"
+#
+#
+# get "/posts/new", to: "posts#new", as: "new_post"
+# get "/posts/:id", to: "posts#show", as: "post"
+# get "/posts/:id/edit", to: "posts#edit", as: "edit_post"
+# post "/posts", to: "posts#create"
+# patch "/posts/:id", to: "posts#update"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +70,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
